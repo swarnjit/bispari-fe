@@ -8,23 +8,23 @@ class App extends Component {
     x: ""
   };
 
-  async componentDidMount() {
-    fetch("http://localhost:8081/hello")
-      .then(response => response.json())
-      .then(data =>
-        this.setState({
-          strng: data
-        })
-      );
-  }
+  // async componentDidMount() {
+  //   fetch("http://localhost:8081/hello")
+  //     .then(response => response.json())
+  //     .then(data =>
+  //       this.setState({
+  //         strng: data
+  //       })
+  //     );
+  // }
   render() {
-    const { strng } = this.state;
-    console.log(strng);
+    // const { strng } = this.state;
+    // console.log(strng);
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <p>Edit{strng} and save to reload.</p>
+          <p>Edit and save to reload.</p>
           <a
             className="App-link"
             href="https://reactjs.org"
