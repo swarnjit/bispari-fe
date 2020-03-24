@@ -21,7 +21,7 @@
     "predeploy": "yarn run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "http://swarnjit.github.io/bispari-fe",
+  "homepage": "http://swarnjit.github.io/bispari-fe/src",
   "eslintConfig": {
     "extends": "react-app"
   },
