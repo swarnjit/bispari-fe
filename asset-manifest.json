@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/bispari-fe/static/css/main.d1b05096.chunk.css",
-    "main.js": "/bispari-fe/static/js/main.7721655c.chunk.js",
-    "main.js.map": "/bispari-fe/static/js/main.7721655c.chunk.js.map",
+    "main.js": "/bispari-fe/static/js/main.b0469b58.chunk.js",
+    "main.js.map": "/bispari-fe/static/js/main.b0469b58.chunk.js.map",
     "runtime-main.js": "/bispari-fe/static/js/runtime-main.33354d69.js",
     "runtime-main.js.map": "/bispari-fe/static/js/runtime-main.33354d69.js.map",
-    "static/js/2.fa69ac7c.chunk.js": "/bispari-fe/static/js/2.fa69ac7c.chunk.js",
-    "static/js/2.fa69ac7c.chunk.js.map": "/bispari-fe/static/js/2.fa69ac7c.chunk.js.map",
+    "static/js/2.05343e12.chunk.js": "/bispari-fe/static/js/2.05343e12.chunk.js",
+    "static/js/2.05343e12.chunk.js.map": "/bispari-fe/static/js/2.05343e12.chunk.js.map",
     "index.html": "/bispari-fe/index.html",
-    "precache-manifest.86e3ee40962f3ce39de44246ec7bcad8.js": "/bispari-fe/precache-manifest.86e3ee40962f3ce39de44246ec7bcad8.js",
+    "precache-manifest.c81a2d3a44e58492dadaf62d681503a2.js": "/bispari-fe/precache-manifest.c81a2d3a44e58492dadaf62d681503a2.js",
     "service-worker.js": "/bispari-fe/service-worker.js",
     "static/css/main.d1b05096.chunk.css.map": "/bispari-fe/static/css/main.d1b05096.chunk.css.map",
-    "static/js/2.fa69ac7c.chunk.js.LICENSE.txt": "/bispari-fe/static/js/2.fa69ac7c.chunk.js.LICENSE.txt",
+    "static/js/2.05343e12.chunk.js.LICENSE.txt": "/bispari-fe/static/js/2.05343e12.chunk.js.LICENSE.txt",
     "static/media/logo.svg": "/bispari-fe/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.33354d69.js",
-    "static/js/2.fa69ac7c.chunk.js",
+    "static/js/2.05343e12.chunk.js",
     "static/css/main.d1b05096.chunk.css",
-    "static/js/main.7721655c.chunk.js"
+    "static/js/main.b0469b58.chunk.js"
   ]
 }
