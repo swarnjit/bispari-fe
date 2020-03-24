@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/bispari-fe/static/css/main.d1b05096.chunk.css",
-    "main.js": "/bispari-fe/static/js/main.7af44bfd.chunk.js",
-    "main.js.map": "/bispari-fe/static/js/main.7af44bfd.chunk.js.map",
+    "main.js": "/bispari-fe/static/js/main.b9a8a9ba.chunk.js",
+    "main.js.map": "/bispari-fe/static/js/main.b9a8a9ba.chunk.js.map",
     "runtime-main.js": "/bispari-fe/static/js/runtime-main.33354d69.js",
     "runtime-main.js.map": "/bispari-fe/static/js/runtime-main.33354d69.js.map",
     "static/js/2.05343e12.chunk.js": "/bispari-fe/static/js/2.05343e12.chunk.js",
     "static/js/2.05343e12.chunk.js.map": "/bispari-fe/static/js/2.05343e12.chunk.js.map",
     "index.html": "/bispari-fe/index.html",
-    "precache-manifest.5635aea422ee9537446de7d59b5d6ea7.js": "/bispari-fe/precache-manifest.5635aea422ee9537446de7d59b5d6ea7.js",
+    "precache-manifest.bf41d66e7121f9bbff6d7e567139294a.js": "/bispari-fe/precache-manifest.bf41d66e7121f9bbff6d7e567139294a.js",
     "service-worker.js": "/bispari-fe/service-worker.js",
     "static/css/main.d1b05096.chunk.css.map": "/bispari-fe/static/css/main.d1b05096.chunk.css.map",
     "static/js/2.05343e12.chunk.js.LICENSE.txt": "/bispari-fe/static/js/2.05343e12.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.33354d69.js",
     "static/js/2.05343e12.chunk.js",
     "static/css/main.d1b05096.chunk.css",
-    "static/js/main.7af44bfd.chunk.js"
+    "static/js/main.b9a8a9ba.chunk.js"
   ]
 }
