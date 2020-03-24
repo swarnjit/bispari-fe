@@ -3,10 +3,10 @@ import logo from "./logo.svg";
 import "./App.css";
 
 class App extends Component {
-  state = {
-    strng: [],
-    x: ""
-  };
+  // state = {
+  //   strng: [],
+  //   x: ""
+  // };
 
   // async componentDidMount() {
   //   fetch("http://localhost:8081/hello")
