@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/bipariFE/static/css/main.d1b05096.chunk.css",
-    "main.js": "/bipariFE/static/js/main.225e50a0.chunk.js",
-    "main.js.map": "/bipariFE/static/js/main.225e50a0.chunk.js.map",
-    "runtime-main.js": "/bipariFE/static/js/runtime-main.297721c1.js",
-    "runtime-main.js.map": "/bipariFE/static/js/runtime-main.297721c1.js.map",
-    "static/js/2.fa69ac7c.chunk.js": "/bipariFE/static/js/2.fa69ac7c.chunk.js",
-    "static/js/2.fa69ac7c.chunk.js.map": "/bipariFE/static/js/2.fa69ac7c.chunk.js.map",
-    "index.html": "/bipariFE/index.html",
-    "precache-manifest.2da97bb333bf9e1705345acc5e08cfe0.js": "/bipariFE/precache-manifest.2da97bb333bf9e1705345acc5e08cfe0.js",
-    "service-worker.js": "/bipariFE/service-worker.js",
-    "static/css/main.d1b05096.chunk.css.map": "/bipariFE/static/css/main.d1b05096.chunk.css.map",
-    "static/js/2.fa69ac7c.chunk.js.LICENSE.txt": "/bipariFE/static/js/2.fa69ac7c.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/bipariFE/static/media/logo.5d5d9eef.svg"
+    "main.css": "/biparife/static/css/main.d1b05096.chunk.css",
+    "main.js": "/biparife/static/js/main.7620caee.chunk.js",
+    "main.js.map": "/biparife/static/js/main.7620caee.chunk.js.map",
+    "runtime-main.js": "/biparife/static/js/runtime-main.7904ae8f.js",
+    "runtime-main.js.map": "/biparife/static/js/runtime-main.7904ae8f.js.map",
+    "static/js/2.fa69ac7c.chunk.js": "/biparife/static/js/2.fa69ac7c.chunk.js",
+    "static/js/2.fa69ac7c.chunk.js.map": "/biparife/static/js/2.fa69ac7c.chunk.js.map",
+    "index.html": "/biparife/index.html",
+    "precache-manifest.b2dd0753dcec6475770deb1060e3b634.js": "/biparife/precache-manifest.b2dd0753dcec6475770deb1060e3b634.js",
+    "service-worker.js": "/biparife/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/biparife/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.fa69ac7c.chunk.js.LICENSE.txt": "/biparife/static/js/2.fa69ac7c.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/biparife/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.297721c1.js",
+    "static/js/runtime-main.7904ae8f.js",
     "static/js/2.fa69ac7c.chunk.js",
     "static/css/main.d1b05096.chunk.css",
-    "static/js/main.225e50a0.chunk.js"
+    "static/js/main.7620caee.chunk.js"
   ]
 }
