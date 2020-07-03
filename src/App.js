@@ -9,7 +9,7 @@ export default function App() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Route key="home" exact path="/" component={Home} />
+      <Route key="home" exact path="/bispari-fe" component={Home} />
       <Route key="profile" exact path="/profile" component={Home} />
       <Route key="search" exact path="/search" component={SearchResults} />
     </React.Fragment>
