@@ -181,7 +181,7 @@ const Navbar = (props) => {
     <>
       <AppBar position="fixed" className={appBarClassList}>
         <Toolbar className={classes.container}>
-          <Grid component={Link} to={"/"}>
+          <Grid component={Link} to={"/bispari-fe"}>
             <img className={classes.logo} src={logo} alt="logo" />
           </Grid>
           <div className={classes.flex}>
@@ -189,7 +189,7 @@ const Navbar = (props) => {
               button="true"
               className={classes.title}
               component={Link}
-              to={"/"}
+              to={"/bispari-fe"}
             >
               Bispari
             </Button>
