@@ -1,7 +1,9 @@
 import axios from "axios";
 
-const fetchURL = "http://localhost:5000/profiles";
-const fetchUrlSearch = "http://localhost:5000/search/swa";
+const fetchURL =
+  "http://bisparibe-env.eba-dgmzbqp5.ca-central-1.elasticbeanstalk.com/profiles";
+const fetchUrlSearch =
+  "http://bisparibe-env.eba-dgmzbqp5.ca-central-1.elasticbeanstalk.com/search/swa";
 
 export const fetchSkillerProfile = async () => {
   try {
