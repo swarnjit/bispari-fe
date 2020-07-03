@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/bispari-fe/precache-manifest.d7cc38f1f72ada93bee8a02a1760dcd1.js"
+  "/bispari-fe/precache-manifest.205b635461dbdebfbee20d3964cf32c9.js"
 );
 
 self.addEventListener('message', (event) => {

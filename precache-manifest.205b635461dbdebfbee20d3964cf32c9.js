@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9c16507f9b4de40f86a5faf0cd1ea243",
+    "revision": "ad62c550788677a3eb49143a137231be",
     "url": "/bispari-fe/index.html"
   },
   {
-    "revision": "d9ded18ad7592e8ac3d5",
+    "revision": "ba2e65bddbf62913d103",
     "url": "/bispari-fe/static/css/main.ba201c4d.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bispari-fe/static/js/2.c81c866c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d9ded18ad7592e8ac3d5",
-    "url": "/bispari-fe/static/js/main.6ce899fc.chunk.js"
+    "revision": "ba2e65bddbf62913d103",
+    "url": "/bispari-fe/static/js/main.14b4dff0.chunk.js"
   },
   {
     "revision": "b2f4e7e780ce4d3ef665",
