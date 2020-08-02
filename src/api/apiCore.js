@@ -1,9 +1,14 @@
 import axios from "axios";
 
-const fetchURL =
-  "http://bisparibe-env.eba-dgmzbqp5.ca-central-1.elasticbeanstalk.com/profiles";
-const fetchUrlSearch =
-  "http://bisparibe-env.eba-dgmzbqp5.ca-central-1.elasticbeanstalk.com/search/swa";
+// const fetchURL =
+//   "http://bisparibe-env.eba-dgmzbqp5.ca-central-1.elasticbeanstalk.com/profiles";
+// const fetchUrlSearch =
+//   "http://bisparibe-env.eba-dgmzbqp5.ca-central-1.elasticbeanstalk.com/search/swa";
+const api = "http://localhost:9191";
+const fetchURL = "/profiles";
+const fetchUrlSearch = "http://localhost:9191/search/swa";
+const addUserURL = "http://localhost:9191/addProfile";
+const loginUserURL = "http://localhost:9191/login";
 
 export const fetchSkillerProfile = async () => {
   try {
@@ -27,4 +32,39 @@ export const fetchProfilesBySearch = async () => {
   } catch (error) {
     return error;
   }
+};
+
+export const registerUser = (data) => {
+  try {
+    fetch(addUserURL, {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    }).then((res) => {
+      console.log(res.status);
+    });
+  } catch (error) {}
+};
+
+export const loginUser = (data) => {
+  fetch(loginUserURL, {
+    method: "POST",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  })
+    .then((response) => {
+      if (!response.ok) {
+        console.log(response.error);
+      }
+      return response;
+    })
+    .then((d) => {
+      console.log(d.status);
+    });
 };

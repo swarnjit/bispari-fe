@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Grid, Typography } from "@material-ui/core";
+import { Typography } from "@material-ui/core";
 import GridContainer from "../../../components/Grid/GridContainer";
 import GridItem from "../../../components/Grid/GridItem";
 
@@ -37,11 +37,10 @@ const IntroPart = () => {
             justify="space-between"
             className={classes.description}
           >
-            This is the paragraph where you can write more details about your
-            product. Keep you user engaged by providing meaningful information.
-            Remember that by this time, the user is curious, otherwise he wouldn
-            {"'"}t scroll to get here. Add a button if you want the user to see
-            more.
+            Bispari is designed to make it easy to connect customers and skilled
+            people online. Skilled people can have their profile and can share
+            their information that will never go to the bottom of page like many
+            ad posting websites.
           </Typography>
         </GridItem>
       </GridContainer>

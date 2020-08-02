@@ -14,14 +14,13 @@ import {
   Box,
   ListItemText,
   Hidden,
-  Button,
   Grid,
 } from "@material-ui/core";
-import { AssignmentInd, Home } from "@material-ui/icons";
+import { Home, LockOpen, SearchSharp } from "@material-ui/icons";
 import MenuIcon from "@material-ui/icons/Menu";
 import { makeStyles } from "@material-ui/core/styles";
 import NavbarLinks from "./NavbarLinks";
-import logo from "./logo.png";
+import logo from "./logo1.png";
 
 const useStyles = makeStyles((theme) => ({
   menuContainer: {
@@ -93,8 +92,8 @@ const useStyles = makeStyles((theme) => ({
       "0 4px 18px 0px rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.15)",
   },
   logo: {
-    height: theme.spacing(6),
-    width: theme.spacing(16),
+    height: theme.spacing(2),
+    width: theme.spacing(8),
   },
 }));
 
@@ -105,9 +104,14 @@ const menuItems = [
     listPath: "/",
   },
   {
-    listIcon: <AssignmentInd />,
-    listText: "Resume",
-    listPath: "/resume",
+    listIcon: <SearchSharp />,
+    listText: "Browse",
+    listPath: "/browse",
+  },
+  {
+    listIcon: <LockOpen />,
+    listText: "Login",
+    listPath: "/login",
   },
 ];
 
@@ -184,7 +188,7 @@ const Navbar = (props) => {
           <Grid component={Link} to={"/bispari-fe"}>
             <img className={classes.logo} src={logo} alt="logo" />
           </Grid>
-          <div className={classes.flex}>
+          {/* <div className={classes.flex}>
             <Button
               button="true"
               className={classes.title}
@@ -193,7 +197,7 @@ const Navbar = (props) => {
             >
               Bispari
             </Button>
-          </div>
+          </div> */}
 
           <Hidden mdUp>
             <IconButton onClick={toggleSideMenu("right", true)}>

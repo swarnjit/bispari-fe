@@ -1,21 +1,11 @@
-import React, { useState, useEffect } from "react";
-// import { useDropzone } from "react-dropzone";
+import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { container, title } from "./../../assets/mainCss";
-import {
-  Grid,
-  Card,
-  CardContent,
-  Container,
-  Typography,
-  Paper,
-} from "@material-ui/core";
-import { fetchSkillerProfile } from "../../api/apiCore";
-// import axios from "axios";
 import Header from "../../components/Header/Header";
 import Navbar from "../../components/Navbar/Navbar";
 import IntroPart from "./Parts/IntroPart";
 import classNames from "classnames";
+import Featuredprofiles from "./Parts/FeaturedProfiles";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -62,17 +52,6 @@ const useStyles = makeStyles((theme) => ({
 
 const Home = () => {
   const classes = useStyles();
-
-  const [profile, setProfile] = useState([]);
-
-  useEffect(() => {
-    const fetchProfiles = async () => {
-      const results = await fetchSkillerProfile();
-      setProfile(results);
-    };
-    fetchProfiles();
-  }, []);
-
   return (
     <>
       <Navbar
@@ -86,12 +65,9 @@ const Home = () => {
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
           <IntroPart />
+          <Featuredprofiles />
         </div>
       </div>
-
-      <Container component="footer">
-        <Typography>Copyright Bispari 2020</Typography>
-      </Container>
     </>
   );
 };

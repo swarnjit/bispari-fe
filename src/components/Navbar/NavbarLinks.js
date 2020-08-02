@@ -1,13 +1,5 @@
-import React, { useState } from "react";
-import {
-  List,
-  ListItem,
-  makeStyles,
-  Button,
-  InputBase,
-  IconButton,
-  Paper,
-} from "@material-ui/core";
+import React from "react";
+import { List, ListItem, makeStyles, Button } from "@material-ui/core";
 import PersonIcon from "@material-ui/icons/Person";
 import SearchIcon from "@material-ui/icons/Search";
 import LockOpenIcon from "@material-ui/icons/LockOpen";
@@ -44,82 +36,40 @@ const style = (theme) => ({
     marginRight: "3px",
   },
   navLink: {
-    color: "white",
+    color: "#555",
     position: "relative",
     padding: "0.9375rem",
-    fontWeight: "500",
-    fontSize: "18px",
-    textTransform: "uppercase",
+    fontWeight: "600",
+    fontSize: "16px",
+    textTransform: "capitalize",
     borderRadius: "3px",
     lineHeight: "20px",
     textDecoration: "none",
     margin: "0px",
     display: "inline-flex",
     "&:hover,&:focus": {
-      color: "inherit",
+      color: "#1dbf73",
       background: "rgba(200, 200, 200, 0.2)",
     },
-    [theme.breakpoints.down("sm")]: {
-      width: "calc(100% - 30px)",
-      marginLeft: "15px",
-      marginBottom: "8px",
-      marginTop: "8px",
-      textAlign: "left",
-      "& > span:first-child": {
-        justifyContent: "flex-start",
-      },
-    },
-  },
-  search: {
-    marginLeft: theme.spacing(1),
-    flex: 1,
-  },
-  paper: {
-    padding: "2px 4px",
-    display: "flex",
-    alignItems: "center",
-    opacity: 0.5,
+    // [theme.breakpoints.down("sm")]: {
+    //   width: "calc(100% - 30px)",
+    //   marginLeft: "15px",
+    //   marginBottom: "8px",
+    //   marginTop: "8px",
+    //   textAlign: "left",
+    //   "& > span:first-child": {
+    //     justifyContent: "flex-start",
+    //   },
+    // },
   },
 });
 const useStyles = makeStyles(style);
-const initialState = {
-  searchEntry: "ggg",
-};
 
 const NavbarLinks = () => {
   const classes = useStyles();
-  const [state, setState] = useState(initialState);
 
-  const handleChange = (e) => {
-    setState({
-      ...initialState,
-      searchEntry: e.target.value,
-    });
-    console.log(state.searchEntry);
-  };
-
-  const handleClick = () => {};
   return (
     <List className={classes.list}>
-      <ListItem className={classes.listItem}>
-        <Paper component="form" className={classes.paper}>
-          <InputBase
-            className={classes.search}
-            placeholder="Type here to search"
-            inputProps={{ "aria-label": "search google maps" }}
-            onChange={handleChange}
-          />
-          <IconButton
-            type="submit"
-            aria-label="search"
-            component={Link}
-            to="/search"
-            onClick={handleClick}
-          >
-            <SearchIcon className={classes.icons} />
-          </IconButton>
-        </Paper>
-      </ListItem>
       <ListItem className={classes.listItem}>
         <Button className={classes.navLink}>
           <SearchIcon className={classes.icons} />
@@ -133,9 +83,15 @@ const NavbarLinks = () => {
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Button className={classes.navLink}>
+        <Button component={Link} to="/login" className={classes.navLink}>
           <LockOpenIcon className={classes.icons} />
           Login
+        </Button>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Button component={Link} to="/register" className={classes.navLink}>
+          <LockOpenIcon className={classes.icons} />
+          Register
         </Button>
       </ListItem>
     </List>
