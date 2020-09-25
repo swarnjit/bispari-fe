@@ -22,6 +22,16 @@ export const fetchSkillerProfile = async () => {
   }
 };
 
+export function loginUser1(data) {
+  return axios.post(loginUserURL, data);
+}
+export const loginUser = (data) => {
+  return axios.post(loginUserURL, data).then((response) => {
+    console.log(response.data);
+    return response;
+  });
+};
+
 export const fetchProfilesBySearch = async () => {
   try {
     const searchResults = await axios(fetchUrlSearch, {
@@ -44,27 +54,7 @@ export const registerUser = (data) => {
       },
       body: JSON.stringify(data),
     }).then((res) => {
-      console.log(res.status);
+      console.log(res);
     });
   } catch (error) {}
-};
-
-export const loginUser = (data) => {
-  fetch(loginUserURL, {
-    method: "POST",
-    headers: {
-      Accept: "application/json",
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(data),
-  })
-    .then((response) => {
-      if (!response.ok) {
-        console.log(response.error);
-      }
-      return response;
-    })
-    .then((d) => {
-      console.log(d.status);
-    });
 };

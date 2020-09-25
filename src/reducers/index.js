@@ -1,8 +1,9 @@
 import { combineReducers } from "redux";
-import userAuthReducer from "../screens/LoginSignUp/reducers";
+import logUserIn from "../screens/LoginSignUp/reducers";
 import searchReducer from "../screens/SearchResults/reducers";
 
-export default combineReducers({
-  userAuthReducer,
-  searchReducer,
+const masterReducer = combineReducers({
+  loggedUser: logUserIn,
+  search: searchReducer,
 });
+export default masterReducer;

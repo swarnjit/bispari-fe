@@ -4,6 +4,7 @@ import PersonIcon from "@material-ui/icons/Person";
 import SearchIcon from "@material-ui/icons/Search";
 import LockOpenIcon from "@material-ui/icons/LockOpen";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const style = (theme) => ({
   list: {
@@ -66,10 +67,11 @@ const style = (theme) => ({
 const useStyles = makeStyles(style);
 
 const NavbarLinks = () => {
+  const isLogged = useSelector((state) => state.loggedUser.isLogged);
+  console.log(isLogged);
   const classes = useStyles();
-
-  return (
-    <List className={classes.list}>
+  const renderMenuNotLogged = () => (
+    <List>
       <ListItem className={classes.listItem}>
         <Button className={classes.navLink}>
           <SearchIcon className={classes.icons} />
@@ -95,6 +97,29 @@ const NavbarLinks = () => {
         </Button>
       </ListItem>
     </List>
+  );
+
+  const renderMenuLogged = () => (
+    <List>
+      <ListItem className={classes.listItem}>
+        <Button className={classes.navLink}>
+          <SearchIcon className={classes.icons} />
+          Browse
+        </Button>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Button component={Link} to="/bispari-fe" className={classes.navLink}>
+          <PersonIcon className={classes.icons} />
+          Profile
+        </Button>
+      </ListItem>
+    </List>
+  );
+
+  return (
+    <div className={classes.list}>
+      {isLogged ? renderMenuLogged() : renderMenuNotLogged()}
+    </div>
   );
 };
 

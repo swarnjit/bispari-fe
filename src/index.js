@@ -4,19 +4,9 @@ import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter } from "react-router-dom";
-import { createStore } from "redux";
 import { Provider } from "react-redux";
-import userAuthReducer from "./screens/LoginSignUp/reducers";
-import searchReducer from "./screens/SearchResults/reducers";
-import { combineReducers } from "redux";
 import history from "./util/history";
-
-const rootReducer = combineReducers({
-  userAuthReducer,
-  searchReducer,
-});
-
-let store = createStore(rootReducer);
+import store from "./store";
 
 ReactDOM.render(
   <Provider store={store}>

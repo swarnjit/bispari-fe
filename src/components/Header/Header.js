@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       backgroundImage: `url(${bgMobile})`,
     },
-    height: "90vh",
+    height: "60vh",
     maxHeight: "1000px",
     overflow: "hidden",
     position: "relative",
@@ -32,20 +32,19 @@ const useStyles = makeStyles((theme) => ({
     padding: "0",
     border: "0",
     display: "flex",
-    alignItems: "center",
+    alignItems: "start",
   },
   subHeader: {
     margin: 0,
     maxWidth: 540,
     padding: "0 0 0 30px",
-    paddingTop: "-40px",
+    paddingTop: "15vh",
     width: "auto",
   },
   intro: {
     fontSize: 30,
     [theme.breakpoints.down("xs")]: {
       fontSize: 20,
-      color: "#2dda5a",
     },
     color: "#1f2229",
     textAlign: "left",

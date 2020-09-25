@@ -23,6 +23,7 @@
     "react-scripts": "3.4.0",
     "reactstrap": "6.5.0",
     "redux": "^4.0.5",
+    "redux-actions": "^2.6.5",
     "redux-persist": "^4.8.0",
     "redux-thunk": "^2.3.0"
   },

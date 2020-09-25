@@ -86,14 +86,14 @@ const useStyles = makeStyles((theme) => ({
     border: "0",
     padding: "0.625rem 0",
     marginBottom: "20px",
-    color: "#4267b2",
-    backgroundColor: "#4267b2 !important",
+    color: "#fff",
+    backgroundColor: "#fff !important",
     boxShadow:
       "0 4px 18px 0px rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.15)",
   },
   logo: {
-    height: theme.spacing(2),
-    width: theme.spacing(8),
+    height: theme.spacing(4),
+    width: theme.spacing(10),
   },
 }));
 
@@ -119,6 +119,7 @@ const Navbar = (props) => {
   const [state, setState] = useState({
     right: false,
   });
+
   useEffect(() => {
     if (props.changeColorOnScroll) {
       window.addEventListener("scroll", headerColorChange);
@@ -201,7 +202,7 @@ const Navbar = (props) => {
 
           <Hidden mdUp>
             <IconButton onClick={toggleSideMenu("right", true)}>
-              <MenuIcon style={{ color: "orange" }} />
+              <MenuIcon style={{ color: "#000" }} />
             </IconButton>
             <RightMenu
               open={state.right}

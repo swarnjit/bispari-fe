@@ -13,14 +13,16 @@ import Footer from "../../components/Footer/Footer";
 import { EmailRounded, LockRounded } from "@material-ui/icons";
 import style from "../LoginSignUp/loginStyle";
 import { Link } from "react-router-dom";
-
+import { useDispatch } from "react-redux";
 import { loginUser } from "../../api/apiCore";
+import { login as logUser } from "./actions";
 
 const useStyles = makeStyles(style);
 
 function Login(props) {
   const { history } = props;
   const classes = useStyles();
+  const dispatch = useDispatch();
 
   const [login, setLogin] = useState({
     userName: "",
@@ -35,13 +37,12 @@ function Login(props) {
     }));
   }
 
-  function onSubmit(event) {
+  const onSubmit = (event) => {
     event.preventDefault();
-    try {
-      loginUser(login);
+    return logUser(login).then(() => {
       history.push("/bispari-fe");
-    } catch (error) {}
-  }
+    });
+  };
   return (
     <div>
       <div>

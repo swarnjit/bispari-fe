@@ -1,7 +1,20 @@
 const InitialState = {
-  email: "",
-  password: "",
+  user: {},
+  isLogged: false,
 };
-export default (state = InitialState, action) => {
-  return state;
+
+const logUserIn = (state = InitialState, action) => {
+  switch (action.type) {
+    case "LOGIN":
+      console.log(action.payload);
+      return { ...state, ...action.payload, isLogged: true };
+    case "INC":
+      return {
+        ...state,
+        inc: 1,
+      };
+    default:
+      return state;
+  }
 };
+export default logUserIn;
