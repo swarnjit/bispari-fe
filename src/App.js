@@ -11,7 +11,7 @@ export default function App() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Route key="home" exact path="/bispari-fe" component={Home} />
+      <Route key="home" exact path="/" component={Home} />
       <Route key="profile" path="/profile" component={Home} />
       <Route key="search" path="/search" component={SearchResults} />
       <Route key="login" path="/login" component={Login} />

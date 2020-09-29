@@ -79,7 +79,7 @@ const NavbarLinks = () => {
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Button component={Link} to="/bispari-fe" className={classes.navLink}>
+        <Button component={Link} to="/" className={classes.navLink}>
           <PersonIcon className={classes.icons} />
           Profile
         </Button>
@@ -108,7 +108,7 @@ const NavbarLinks = () => {
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Button component={Link} to="/bispari-fe" className={classes.navLink}>
+        <Button component={Link} to="/" className={classes.navLink}>
           <PersonIcon className={classes.icons} />
           Profile
         </Button>

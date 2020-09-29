@@ -186,7 +186,7 @@ const Navbar = (props) => {
     <>
       <AppBar position="fixed" className={appBarClassList}>
         <Toolbar className={classes.container}>
-          <Grid component={Link} to={"/bispari-fe"}>
+          <Grid component={Link} to={"/"}>
             <img className={classes.logo} src={logo} alt="logo" />
           </Grid>
           {/* <div className={classes.flex}>
