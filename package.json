@@ -2,7 +2,7 @@
   "name": "bispari",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://swarnjit.github.io/bispari-fe",
+  "homepage": "https://bispari.com",
   "dependencies": {
     "@material-ui/core": "^4.9.7",
     "@material-ui/icons": "^4.9.1",
