@@ -5,7 +5,9 @@ const Footer = () => {
   return (
     <div>
       <Container component="footer">
-        <Typography align="center">Copyright Bispari 2020</Typography>
+        <Typography style={{ marginTop: "40px" }} align="center">
+          Copyright Bispari 2020
+        </Typography>
       </Container>
     </div>
   );

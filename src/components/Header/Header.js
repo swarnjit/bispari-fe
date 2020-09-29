@@ -14,6 +14,7 @@ import bg from "../Header/bg2.png";
 import bgMobile from "../Header/bgMobile.png";
 
 import { Link } from "react-router-dom";
+import ReactTyped from "react-typed";
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -91,29 +92,48 @@ const Header = () => {
   const handleClick = () => {};
 
   return (
-    <Container className={classes.container} maxWidth="xl">
-      <Grid container className={classes.subHeader} md={6} xs={12}>
-        <Typography className={classes.intro}>
-          Find the help from people you are looking for.
-        </Typography>
-        <Grid container="form" className={classes.searchBar}>
-          <InputBase
-            className={classes.search}
-            placeholder="Type here to search"
-            onChange={handleChange}
-          />
-          <IconButton
-            type="submit"
-            aria-label="search"
-            component={Link}
-            to="/search"
-            onClick={handleClick}
-          >
-            <SearchIcon className={classes.searchIcon} />
-          </IconButton>
+    <>
+      <Container className={classes.container} maxWidth="xl">
+        <Grid container className={classes.subHeader} md={6} xs={12}>
+          <Typography className={classes.intro}>
+            Find the help from people you are looking for.
+          </Typography>
+          <Grid container="form" className={classes.searchBar}>
+            <InputBase
+              className={classes.search}
+              placeholder="Type here to search"
+              onChange={handleChange}
+            />
+            <IconButton
+              type="submit"
+              aria-label="search"
+              component={Link}
+              to="/search"
+              onClick={handleClick}
+            >
+              <SearchIcon className={classes.searchIcon} />
+            </IconButton>
+            <div>
+              <Grid>
+                <Typography
+                  className={classes.subtitle}
+                  variant="h3"
+                  align="center"
+                >
+                  <ReactTyped
+                    strings={["Under Construction", "Backend is being crafted"]}
+                    typeSpeed={60}
+                    backSpeed={60}
+                    loop
+                    className={classes.typedOutput}
+                  />
+                </Typography>
+              </Grid>
+            </div>
+          </Grid>
         </Grid>
-      </Grid>
-    </Container>
+      </Container>
+    </>
   );
 };
 

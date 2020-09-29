@@ -6,6 +6,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import IntroPart from "./Parts/IntroPart";
 import classNames from "classnames";
 import Featuredprofiles from "./Parts/FeaturedProfiles";
+import Footer from "../../components/Footer/Footer";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -68,6 +69,7 @@ const Home = () => {
           <Featuredprofiles />
         </div>
       </div>
+      <Footer />
     </>
   );
 };
